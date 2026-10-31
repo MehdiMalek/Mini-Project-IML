@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Byekan";
+  src:
+    url("../BYekan.ttf") format("ttf"),
+    url("../Font/BYekan.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lalezar";
+  src:
+    url("../Font/Lalezar-Regular.ttf") format("ttf"),
+    url("../Font/Lalezar-Regular.woff") format("woff");
+}
+
+body {
+  font-family: Byekan;
+  overflow-x: hidden;
+}
+
+.header {
+  min-height: 550px;
+  background-image: url("../Img/NUxVAg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.header .nav-list {
+  list-style-type: none;
+}
+
+.header .nav-list .nav-item {
+  display: inline-block;
+  padding: 15px;
+}
+
+.header .nav-list .nav-item:hover {
+  color: orange;
+}
+
+.header h1 {
+  font-size: clamp(30px, 8vw, 60px);
+  font-family: Lalezar;
+}
+
+.header h1 span {
+  color: orange;
+}
+
+.header .description {
+  width: 90%;
+  max-width: 450px;
+  height: auto;
+  min-height: 55px;
+  margin: 30px auto 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  line-height: 1.6;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.members {
+  text-align: center;
+  padding: 50px 15px;
+}
+
+.members h2 {
+  font-family: Lalezar;
+}
+
+.member-list {
+  list-style-type: none;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member-item {
+  width: 350px;
+  max-width: 100%;
+  margin: 15px;
+  box-shadow: 0 0 10px #bbbbbb;
+}
+
+.member-pic {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.member-name {
+  font-size: 25px;
+  margin-top: 5px;
+  font-family: Lalezar;
+}
+
+.member-bio {
+  padding: 25px;
+  text-align: justify;
+}
+
+.about {
+  min-height: 700px;
+  background-image: url("../Img/5453427.jpg");
+  background-size: cover;
+  padding: 50px 20px;
+  background-color: #373837;
+  background-blend-mode: multiply;
+}
+
+.about .circle {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  aspect-ratio: 1/1;
+  background-color: rgba(135, 135, 135, 0.3);
+  color: white;
+  margin: auto;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.about .circle h2 {
+  font-size: clamp(24px, 5vw, 35px);
+  font-family: Lalezar;
+}
+
+.about .circle p {
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(128, 128, 128);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .item {
+  width: 40px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Size 768 Tablet */
+@media (max-width: 768px) {
+  .header .nav-list .nav-item {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .about .circle {
+    border-radius: 20px;
+    aspect-ratio: auto;
+    padding: 40px 20px;
+  }
+
+  .member-item {
+    width: 90%;
+  }
+}
+
+/* Responsive Size 480 Mobile */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 35px;
+  }
+
+  .header .description {
+    font-size: 14px;
+  }
+
+  .member-name {
+    font-size: 20px;
+  }
+}
